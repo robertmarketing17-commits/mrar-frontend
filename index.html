@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MR AR-CONDICIONADO</title>
+    <script>
+      // window.__MRAR_API_URL__ — mecanismo de override em tempo de
+      // execução já usado por App.jsx (const API_BASE_URL = ... ||
+      // "http://localhost:3001"). Sem processo de build injetando
+      // isso, é aqui que se aponta para a API real antes do app
+      // carregar. Deixe comentado para continuar usando o valor de
+      // desenvolvimento padrão (localhost:3001); descomente e ajuste
+      // a URL quando for apontar para o backend publicado no Render.
+      // window.__MRAR_API_URL__ = "https://SEU-BACKEND.onrender.com";
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
